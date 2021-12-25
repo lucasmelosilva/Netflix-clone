@@ -16,3 +16,26 @@
 .featured--horizontalFilter {
   background: linear-gradient(to right, #111 30%, transparent 70%) no-repeat;
 }
+
+.featured--name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.featered--info {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.featured--points,
+.featured--seasons,
+.featured--year {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.featured--points {
+  display: inline-block;
+  color: #46d369;
+}
