@@ -15,11 +15,16 @@
 
 .featured--horizontalFilter {
   background: linear-gradient(to right, #111 30%, transparent 70%) no-repeat;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .featured--name {
   font-size: 60px;
   font-weight: bold;
+  width: 50%; 
 }
 
 .featered--info {
@@ -59,7 +64,14 @@
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
-  margin-right: 15px;
+  margin-right: 10px;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.featured--watchButton:hover,
+.featured--myListButton:hover {
+  opacity: 0.7;
 }
 
 .featured--watchButton {
@@ -70,4 +82,10 @@
 .featured--myListButton {
   background: #333;
   color: #fff;
+}
+
+.featured--genres {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #999;
 }
