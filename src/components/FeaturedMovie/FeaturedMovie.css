@@ -39,3 +39,10 @@
   display: inline-block;
   color: #46d369;
 }
+
+.featured--description {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #999;
+  max-width: 40%;
+}
