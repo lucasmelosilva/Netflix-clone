@@ -1,0 +1,18 @@
+.featuredMovie {
+  width: 100vw;
+  height: 100vh;
+}
+
+.featured--horizontalFilter,
+.featured--verticalFilter {
+  width: inherit;
+  height: inherit;
+}
+
+.featured--verticalFilter {
+  background: linear-gradient(to top, #111 10%, transparent 90%) no-repeat;
+}
+
+.featured--horizontalFilter {
+  background: linear-gradient(to right, #111 30%, transparent 70%) no-repeat;
+}
