@@ -46,3 +46,28 @@
   color: #999;
   max-width: 40%;
 }
+
+.featured--buttons {
+  margin-top: 15px;
+}
+
+.featured--watchButton,
+.featured--myListButton {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.featured--watchButton {
+  background: #fff;
+  color: #000;
+}
+
+.featured--myListButton {
+  background: #333;
+  color: #fff;
+}
