@@ -1,0 +1,23 @@
+header {
+  position: fixed;
+  z-index: 999;
+  background: transparent;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header.black {
+  background: #141414;
+}
+
+.header--logo img { 
+  width: 100px;
+} 
+
+.header--user img{
+  width: 35px;
+  border-radius: 3px;
+}
