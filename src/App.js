@@ -59,7 +59,7 @@ function App() {
 
       <footer> 
         Feito com <span role="img" aria-label="coração">❤️</span> por Lucas Melo <br/>
-        Direitos de imagem para <a target="_blank" rel="noreferrer" href="https://www.netflix.com">Netflix</a> <br/>
+        Direitos de imagens para <a target="_blank" rel="noreferrer" href="https://www.netflix.com">Netflix</a> <br/>
         Dados pegos do site <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">The Movie DB</a>
 
       </footer>
