@@ -28,12 +28,12 @@ function App() {
 
   useEffect(() => {
     const scrollListner = () => {
-      if(window.scrollY > 10) {
+      if (window.scrollY > 10) {
         setBlackHeader(true);
       } else {
         setBlackHeader(false);
       }
-     
+
     }
 
     window.addEventListener('scroll', scrollListner);
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="page">
-      <Header black={blackHeader}/>
+      <Header black={blackHeader} />
 
       {featuredData &&
         <FeaturedMovie item={featuredData} />
@@ -57,12 +57,18 @@ function App() {
         ))}
       </section>
 
-      <footer> 
-        Feito com <span role="img" aria-label="coração">❤️</span> por Lucas Melo <br/>
-        Direitos de imagens para <a target="_blank" rel="noreferrer" href="https://www.netflix.com">Netflix</a> <br/>
+      <footer>
+        Feito com <span role="img" aria-label="coração">❤️</span> por Lucas Melo <br />
+        Direitos de imagens para <a target="_blank" rel="noreferrer" href="https://www.netflix.com">Netflix</a> <br />
         Dados pegos do site <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">The Movie DB</a>
 
       </footer>
+
+      {movieList.length <= 0 &&
+        <div className="loading">
+          <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="carregando" />
+        </div>
+      }
     </div>
   );
 }

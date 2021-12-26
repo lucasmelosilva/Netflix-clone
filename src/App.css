@@ -30,3 +30,24 @@ footer a {
 footer a:last-child {
   color: #42B5E2;
 }
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #000;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading img {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
