@@ -7,6 +7,8 @@ function FeaturedMovie({ item }) {
   const genres = [];
   item.genres.forEach(genre => genres.push(genre.name));
 
+  let description = item.overview;
+
   return (
     <section className="featuredMovie" style={{
       backgroundSize: 'cover',
@@ -23,7 +25,7 @@ function FeaturedMovie({ item }) {
           </div>
     
           <div className="featured--description">
-            {item.overview}
+            {description.length > 300 ? description.substring(0,300) + '...' : description}
           </div>
 
           <div className="featured--buttons">
