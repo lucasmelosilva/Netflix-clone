@@ -45,9 +45,8 @@ function MovieRow({ title, items }) {
           }}
         >
           {items.results.map((item, key) => (
-
-            <div className="movieRow--item">
-              <img key={key} src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt="" />
+            <div key={key} className="movieRow--item">
+              <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.name} />
             </div>
           ))}
         </div>
